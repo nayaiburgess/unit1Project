@@ -1,0 +1,25 @@
+h1{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 90px;
+    text-align: center;
+
+}
+.container{
+    display: flex;
+    
+}
+.tree{
+    margin: auto;
+    display: flex;
+    width: 600px;
+    height: 500px;
+    background: url(/images/hangman_tree.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+}
+#man{
+    margin-left: 196px;
+    margin-top: 50px;
+}

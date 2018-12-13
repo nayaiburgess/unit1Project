@@ -1,8 +1,17 @@
+/* Text Decoration */
+body{
+    background: url(/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 h1{
     font-family: 'Gamja Flower', cursive;
     font-size: 90px;
     text-align: center;
-
+}
+a{
+    text-decoration-line: none;
+    color: black;
 }
 .container{
     display: flex;
@@ -19,7 +28,69 @@ h1{
     
     
 }
+#play{
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    font-size: 2em;
+    font-family: 'Gamja Flower', cursive;
+    text-align: center;
+    border: solid black;
+
+}
 #man{
     margin-left: 196px;
     margin-top: 50px;
+}
+#body{
+    margin-left: -400px;
+    margin-top: 55px;
+}
+#leftarm{
+    margin-left: -400px;
+    margin-top: 60px;
+}
+#rightarm{
+    margin-left: -400px;
+    margin-top: 60px;
+}
+#leftleg{
+    margin-left: -400px;
+    margin-top: 59px;
+}
+#rightleg{
+    margin-left: -400px;
+    margin-top: 59px;
+}
+
+/* GAME PAGE */
+.game{
+    display: flex;
+    width: 600px;
+    height: 500px;
+    background: url(/images/hangman_tree.gif);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.keyboard{
+    margin: auto;
+    width: 1000px;
+    height: 300px;
+    justify-content: center;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 3em;
+    width: 78px;
+    height: 90px;
+    text-align: center;
+    background-color: transparent;
+    border: solid gray;
+    border-width: 2px;
+    border-radius: 10%;
+    margin: 3px;
 }

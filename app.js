@@ -1,17 +1,17 @@
 //Gather an array for my words
 
-var words = ['bike', 'General Assembly', 'Atlanta', 'Falcons', 'Hawks', 'Coca-Cola', 'Aquarium', 'Zoo', 'Cascade']
+var words = ['BIKE', 'ATLANTA', 'FALCONS', 'HAWKS', 'COLA', 'AQUARIUM', 'ZOO', 'CASCADE']
 currentWord = words[Math.floor(Math.random() * words.length)];
-var word = document.createElement("div")
-    var guessWord = document.createTextNode(currentWord)
-    word.appendChild(guessWord)
-    document.getElementById('guessSpace').appendChild(word);
+guess = currentWord.split("")
+console.log(guess)
 
-//HOW TO CREATE DASHES
-// var answer = []
-// for(x = 0; x < words.length; x++)
-//     answer[x] = '_';
-
+// HOW TO CREATE DASHES
+for(y = 0; y < guess.length; y++)
+    document.getElementById('guessSpace').innerHTML += '  __  ';
+    // if (currentLetter == words.includes(guess[x])){
+    //     guess[x] == currentLetter;
+    //     console.log(currentLetter);
+    // }
 
 
 // PASS IN THE OBJECT 'BUTTON' IN THE FUNCTION
@@ -20,8 +20,17 @@ function currentValue(button){
     var currentLetter = button.value
     var x = document.createElement("li")
     var t = document.createTextNode(currentLetter)
-    x.appendChild(t)
-    document.getElementById('letterspace').appendChild(x);
+    x.appendChild(t);
+    console.log(currentLetter);
+    if (currentLetter == guess[y]){
+        guess[y] == currentLetter;
+        console.log(guess[y]);
+    }
+    else{
+    alert("not working")
+        
+    }
 
+        
 }
 

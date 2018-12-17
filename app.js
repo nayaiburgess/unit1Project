@@ -6,20 +6,15 @@ var words = ['bike', 'General Assembly', 'Atlanta', 'Falcons', 'Hawks', 'Coca-Co
 // for(x = 0; x < words.length; x++)
 //     answer[x] = '_';
 
-function inputVal() {
-        var letters = document.getElementsByClassName("value");
-        for(x = 0; x < letter.length; x++){
-            if(letter[x].value ==letters[x].id )
-        console.log(letters[x].value);
-        else{
-            console.log("nothing")
-        }
-        document.getElementById("letterspace").innerHTML = letter[x].value
-        }
+// PASS IN THE OBJECT BUTTON
+function currentValue(button){
+// GRAB THE VALUE OF THE OBJECT
+var currentLetter = button.value
+console.log(currentLetter)
+  var x = document.createElement("li")
+  var t = document.createTextNode(currentLetter)
+  x.appendChild(t)
+ document.getElementById('letterspace').appendChild(x);
+
 }
- 
-// document.querySelectorAll("button").addEventListener("click", function() {
-//     fired_button = document.querySelectorAll("button").val();
-//     console.log(fired_button);
-// });
 

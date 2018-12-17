@@ -96,7 +96,7 @@ button{
 }
 #spaces{
     border: solid;
-    width: 900px;
+    width: 50vh;
     height: 500px;
     font-size: 3em;
     justify-content: center;

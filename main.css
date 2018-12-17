@@ -95,7 +95,6 @@ button{
     margin: 3px;
 }
 #spaces{
-    border: solid;
     width: 50vh;
     height: 500px;
     font-size: 3em;
@@ -105,4 +104,9 @@ button{
 li{
     display: inline;
     font-size: 67px;
+}
+#guessSpace{
+    width: 50vh;
+    height: 300px;
+    border: solid black;
 }

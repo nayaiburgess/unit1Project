@@ -15,7 +15,7 @@ for( y = 0; y < guess.length; y++){
  }
      
 }
-document.getElementById('guessSpace').innerHTML = emptyArray;
+document.getElementById('guessSpace').innerHTML = emptyArray.join(' ');
 
  // if (currentLetter == guess[y]){
     //     guess[y] == currentLetter;
@@ -32,7 +32,7 @@ function currentValue(button){
     //THIS REPLACES THE DASH OF THE POSITION IN THE ARRAY
     emptyArray[index] = currentLetter;
     // THIS PUTS THE ARRAY IN THE DOM
-    document.getElementById('guessSpace').innerHTML = emptyArray;
+    document.getElementById('guessSpace').innerHTML = emptyArray.join(' ');
 
     // if (currentLetter == guess[attempt]){
     //     console.log(guess[attempt]);

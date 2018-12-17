@@ -4,12 +4,21 @@ var words = ['BIKE', 'ATLANTA', 'FALCONS', 'HAWKS', 'COLA', 'AQUARIUM', 'ZOO', '
 currentWord = words[Math.floor(Math.random() * words.length)];
 guess = currentWord.split("")
 console.log(guess)
-
+emptyArray = []
 // HOW TO CREATE DASHES
-for(y = 0; y < guess.length; y++)
-    document.getElementById('guessSpace').innerHTML += '  __  ';
-    // if (currentLetter == words.includes(guess[x])){
-    //     guess[x] == currentLetter;
+for( y = 0; y < guess.length; y++){
+ // THIS CREATED AN ARRAY OF DASHES BASED ON THE WORD LENGTH
+ if (guess[y] === " "){
+     emptyArray.push(" ")
+ } else {
+     emptyArray.push("_")
+ }
+     
+}
+document.getElementById('guessSpace').innerHTML = emptyArray;
+
+ // if (currentLetter == guess[y]){
+    //     guess[y] == currentLetter;
     //     console.log(currentLetter);
     // }
 
@@ -18,19 +27,20 @@ for(y = 0; y < guess.length; y++)
 function currentValue(button){
 // GRAB THE VALUE OF THE OBJECT
     var currentLetter = button.value
-    var x = document.createElement("li")
-    var t = document.createTextNode(currentLetter)
-    x.appendChild(t);
-    console.log(currentLetter);
-    if (currentLetter == guess[y]){
-        guess[y] == currentLetter;
-        console.log(guess[y]);
-    }
-    else{
-    alert("not working")
-        
-    }
+    //THIS FINDS OUT WHERE IT IS IN THE ARRAY
+    let index = guess.indexOf(currentLetter);
+    //THIS REPLACES THE DASH OF THE POSITION IN THE ARRAY
+    emptyArray[index] = currentLetter;
+    // THIS PUTS THE ARRAY IN THE DOM
+    document.getElementById('guessSpace').innerHTML = emptyArray;
 
-        
+    // if (currentLetter == guess[attempt]){
+    //     console.log(guess[attempt]);
+    // }
+    // else{
+    //      alert("not working")
+    //      return false;
+    // }
+
+    // }       
 }
-

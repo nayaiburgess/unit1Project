@@ -1,25 +1,21 @@
-//Gather an array for my words
 let incorrectAnswer = 1;
 
-
+//Gather an array for my words
 var words = ['RED', 'BLUE', 'ORANGE', 'BLACK', 'BROWN', 'PINK', 'WHITE', 'TAN', 'GRAY','SILVER', 'GOLD']
 currentWord = words[Math.floor(Math.random() * words.length)];
 guess = currentWord.split("")
-console.log(guess)
 emptyArray = []
 // HOW TO CREATE DASHES
+// 'y' is a loop control variable
 for( y = 0; y < guess.length; y++){
  // THIS CREATED AN ARRAY OF DASHES BASED ON THE WORD LENGTH
  if (guess[y] === " "){
      emptyArray.push(" ")
  } else {
      emptyArray.push("_")
- }
-     
+    } 
 }
 document.getElementById('guessSpace').innerHTML = emptyArray.join(' ');
-
-
 
 // PASS IN THE OBJECT 'BUTTON' IN THE FUNCTION
 function currentValue(button){
@@ -27,18 +23,15 @@ function currentValue(button){
     var currentLetter = button.value
     //THIS FINDS OUT WHERE IT IS IN THE ARRAY
     let index = guess.indexOf(currentLetter);
-    //THIS REPLACES THE DASH OF THE POSITION IN THE ARRAY
-    
+    //THIS REPLACES THE DASH OF THE POSITION IN THE ARRAY  
     emptyArray[index] = currentLetter;
     // THIS PUTS THE ARRAY IN THE DOM
         document.getElementById('guessSpace').innerHTML = emptyArray.join(' ');
         //ALERT FOR WIN
         if(emptyArray.join('') === guess.join('')){
-            alert("You have won")
-            
+            alert("You have won") 
         }
-        
-
+    //ALERT FOR LOSER
     if(currentLetter !== guess[index]){
         if (incorrectAnswer == 1){
             document.getElementById('man').style.visibility = 'visible'

@@ -9,3 +9,8 @@ LINK TO TRELLO
 https://trello.com/b/qV5Dadgj/project-1
 
 I chose to create HANGMAN for project 1. The ultimate goal of the game was for the user to be able to guess the letters of a hidden word in no specific order. If the user guesses an incorrect letter a body part of a stick figure will appear. You only have six incorrect attempts. If the user guesses the right word, the letter then appears in its correct spot of the word.
+
+Wireframe 
+https://github.com/nayaiburgess/unit1Project/blob/master/images/IMG_0132%203.JPG
+
+

@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
 </head>
-<body>
+<body> 
+    <h1 id="color">Guess the Color!</h1>
     <div class="game">
         <div id="man"><img src="/images/head.png" width="400px" height="390px"></div>
         <div id="body"><img src="/images/middle.png" width="400px" height="390px"></div> 
-        <!-- <div id="leftarm"><img src="/images/leftarm.png" width="400px" height="390px"></div>
+        <div id="leftarm"><img src="/images/leftarm.png" width="400px" height="390px"></div>
         <div id="rightarm"><img src="/images/rightarm.png" width="400px" height="390px"></div>
         <div id="leftleg"><img src="/images/leftleg.png" width="400px" height="390px"></div>
-        <div id="rightleg"><img src="/images/rightleg.png" width="400px" height="390px"></div> -->
-
+        <div id="rightleg"><img src="/images/rightleg.png" width="400px" height="390px"></div>
+       
         <div id="spaces">
-            <ol id="letterspace"></ol>
             <div id="guessSpace"></div>
         </div>
 </div>
@@ -49,6 +49,8 @@
     <button onclick="currentValue(this)" class = 'value' id="X" value="X">X</button>
     <button onclick="currentValue(this)" class = 'value' id="Y" value="Y">Y</button>
     <button onclick="currentValue(this)" class = 'value' id="Z" value="Z">Z</button>
+    <a href="/game.html"><button class="reset">RESET</button></a>
+    <a href="/index.html"><button class="reset">HOME</button></a>
     
 </div>
 <script src="app.js"></script>

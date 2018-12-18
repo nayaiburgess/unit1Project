@@ -5,6 +5,7 @@ var words = ['RED', 'BLUE', 'ORANGE', 'BLACK', 'BROWN', 'PINK', 'WHITE', 'TAN', 
 currentWord = words[Math.floor(Math.random() * words.length)];
 // MAKE EACH WORD INTO AN ARRAY
 guess = currentWord.split("")
+// MAKE AN ARRAY FOR THE DASHES
 emptyArray = []
 // HOW TO CREATE DASHES
 // 'y' is a loop control variable

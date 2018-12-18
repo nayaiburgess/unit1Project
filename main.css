@@ -116,10 +116,9 @@ li{
 #guessSpace{
     margin-top: 69px;
     height: 300px;
-    font-size: 67px;
+    font-size: 90px;
     width: 800px;
     height: 100px;
-    border: solid black;
     text-align: center;
 }
 .reset{

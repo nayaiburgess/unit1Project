@@ -16,6 +16,13 @@ h1{
 a{
     text-decoration-line: none;
     color: black;
+
+}
+@keyframes bounce{
+    0%{
+        animatio
+    }
+
 }
 .container{
     display: flex;

@@ -3,6 +3,7 @@ let incorrectAnswer = 1;
 //Gather an array for my words
 var words = ['RED', 'BLUE', 'ORANGE', 'BLACK', 'BROWN', 'PINK', 'WHITE', 'TAN', 'GRAY','SILVER', 'GOLD']
 currentWord = words[Math.floor(Math.random() * words.length)];
+// MAKE EACH WORD INTO AN ARRAY
 guess = currentWord.split("")
 emptyArray = []
 // HOW TO CREATE DASHES

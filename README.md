@@ -13,4 +13,5 @@ I chose to create HANGMAN for project 1. The ultimate goal of the game was for t
 Wireframe 
 https://github.com/nayaiburgess/unit1Project/blob/master/images/IMG_0132%203.JPG
 
-
+Deployed Website
+https://condescending-neumann-7271c3.netlify.com/game.html

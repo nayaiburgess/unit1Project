@@ -9,18 +9,15 @@ h1{
     font-size: 90px;
     text-align: center;
 }
-
 #color{
     font-size: 60px;
 }
 a{
     text-decoration-line: none;
     color: black;
-
 }
 .container{
     display: flex;
-    
 }
 .tree{
     margin: auto;
@@ -39,13 +36,11 @@ a{
     font-family: 'Gamja Flower', cursive;
     text-align: center;
     border: solid black;
-
 }
 #man{
     margin-left: 196px;
     margin-top: 50px;
-    visibility: hidden;
-    
+    visibility: hidden; 
 }
 #body{
     margin-left: -400px;

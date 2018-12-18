@@ -31,7 +31,7 @@ function currentValue(button){
         document.getElementById('guessSpace').innerHTML = emptyArray.join(' ');
         //ALERT FOR WIN
         if(emptyArray.join('') === guess.join('')){
-            alert("You have won") 
+            alert("Congratulations, you have won!") 
         }
     //ALERT FOR LOSER
     if(currentLetter !== guess[index]){

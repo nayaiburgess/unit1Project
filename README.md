@@ -14,4 +14,4 @@ Wireframe
 https://github.com/nayaiburgess/unit1Project/blob/master/images/IMG_0132%203.JPG
 
 Deployed Website
-https://condescending-neumann-7271c3.netlify.com/game.html
+https://brave-brahmagupta-e50061.netlify.com/game.html
